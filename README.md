@@ -1,4 +1,4 @@
-# Oriel Prediction Index Administrator — v28-ft-review.2
+# Oriel Prediction Index Administrator — v28-ft-review.3
 
 A production-grade Streamlit dashboard for prediction-market-based CPI forward indices. Live data from Kalshi, ForecastEx, and Polymarket with automatic fallback to sample data. Includes OTC parity validation, DTCC term-structure calibration, a governed-blend CPI Basis layer, a CMS-anchored Healthcare Reference, an illustrative ForecastEx-style medical inflation basis contract, and a governed Index Administrator view.
 

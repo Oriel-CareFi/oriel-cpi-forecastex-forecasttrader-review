@@ -13,6 +13,12 @@ import streamlit as st
 
 from venues.forecastex import ForecastExClient, DEFAULT_CONFIG as FX_CONFIG, score_and_package as fx_score_and_package
 
+# REVIEW_BUILD = True forces sample-only data in this tab and hides the
+# Live-data toggle. Per the ForecastTrader review-build handoff, the
+# external app should show sanitized / sample data only — no calls to
+# the public ForecastEx pairs feed.
+from config.review_build import REVIEW_BUILD
+
 from ui.tokens import (
     BG_APP, BG_ELEVATED, BG_SURFACE,
     BORDER, BORDER_STR,
@@ -51,12 +57,24 @@ def render_forecastex_tab() -> None:
               <span class='version-chip' style='background:#1b2a3e;color:#7aa2f7;border-color:#2e4a72;'>Venue Input: ForecastEx</span>
             </div>""", unsafe_allow_html=True)
         with cr_tog:
-            st.toggle(
-                "Live data",
-                value=True,
-                help="Polls ForecastEx pairs feed. Off = sample data.",
-                key=FX_LIVE_TOGGLE_KEY,
-            )
+            if REVIEW_BUILD:
+                # Force sample-only data for external review. Show a static
+                # chip in place of the toggle so reviewers see the data
+                # source explicitly.
+                st.markdown(
+                    "<div style='display:flex;justify-content:center;"
+                    "align-items:center;padding:6px 0;'>"
+                    "<span class='version-chip'>Sample data</span>"
+                    "</div>",
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.toggle(
+                    "Live data",
+                    value=True,
+                    help="Polls ForecastEx pairs feed. Off = sample data.",
+                    key=FX_LIVE_TOGGLE_KEY,
+                )
         with cr_lbl:
             st.markdown("<div class='ctrl-vd-label'>Valuation Date</div>", unsafe_allow_html=True)
         with cr_dt:
@@ -69,7 +87,9 @@ def render_forecastex_tab() -> None:
         unsafe_allow_html=True,
     )
 
-    _fx_live = st.session_state.get(FX_LIVE_TOGGLE_KEY, True)
+    # REVIEW_BUILD overrides any session-state toggle and forces sample data,
+    # so a returning reviewer can never accidentally activate the live feed.
+    _fx_live = (not REVIEW_BUILD) and st.session_state.get(FX_LIVE_TOGGLE_KEY, True)
     try:
         if _fx_live:
             curve = _cached_forecastex()

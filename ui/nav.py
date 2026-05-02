@@ -58,7 +58,14 @@ def render_nav_bar(
         cpi_nav_badge = ""
 
     feed_live = bool(cpi_runtime_meta and cpi_runtime_meta.get("feed_status") == "live")
-    demo_badge = "" if feed_live else "<span class='nav-pill'>\u25c8 Demo</span>"
+    # In review-build mode the gold "Oriel CPI Demo \u2014 ForecastTrader Review"
+    # label already conveys demo status, so we suppress the redundant Demo
+    # nav-pill on the right (which was rendering its raw HTML on the public
+    # Streamlit Cloud deployment for some reviewers).
+    if review_label:
+        demo_badge = ""
+    else:
+        demo_badge = "" if feed_live else "<span class='nav-pill'>\u25c8 Demo</span>"
 
     # \u2500\u2500 Left-side link / label slot \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
     if show_index_admin_link:

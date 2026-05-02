@@ -1,0 +1,13 @@
+venue,contract_family,horizon_bucket,horizon_min_days,horizon_max_days,n_obs,mean_brier_score,mean_log_loss,mean_abs_error_pct,hit_rate,bias_pct,last_updated,source
+Kalshi,binary_threshold,0-45d,0,45,192,0.142,0.498,0.240,0.711,-0.03,2026-04-15,sample_backfill
+Kalshi,exact_outcome,0-45d,0,45,134,0.151,0.524,0.271,0.688,-0.06,2026-04-15,sample_backfill
+Kalshi,binary_threshold,46-120d,46,120,168,0.156,0.533,0.296,0.673,-0.08,2026-04-15,sample_backfill
+Kalshi,exact_outcome,46-120d,46,120,121,0.164,0.557,0.314,0.661,-0.10,2026-04-15,sample_backfill
+Kalshi,binary_threshold,121-220d,121,220,102,0.171,0.581,0.339,0.648,-0.13,2026-04-15,sample_backfill
+Kalshi,exact_outcome,121-220d,121,220,88,0.179,0.602,0.364,0.633,-0.16,2026-04-15,sample_backfill
+ForecastEx,binary_threshold,0-45d,0,45,161,0.158,0.536,0.284,0.676,-0.07,2026-04-15,sample_backfill
+ForecastEx,exact_outcome,0-45d,0,45,109,0.166,0.559,0.309,0.659,-0.09,2026-04-15,sample_backfill
+ForecastEx,binary_threshold,46-120d,46,120,139,0.173,0.584,0.337,0.642,-0.12,2026-04-15,sample_backfill
+ForecastEx,exact_outcome,46-120d,46,120,94,0.182,0.608,0.358,0.626,-0.15,2026-04-15,sample_backfill
+ForecastEx,binary_threshold,121-220d,121,220,81,0.191,0.629,0.387,0.607,-0.19,2026-04-15,sample_backfill
+ForecastEx,exact_outcome,121-220d,121,220,63,0.204,0.661,0.419,0.591,-0.23,2026-04-15,sample_backfill

@@ -1,0 +1,99 @@
+component,series_id,date,level,weight,group
+Medical care,CUUR0000SAM,2025-02-01,130.9006,8.431,aggregate
+Medical care,CUUR0000SAM,2025-03-01,131.2711,8.431,aggregate
+Medical care,CUUR0000SAM,2025-04-01,131.6427,8.431,aggregate
+Medical care,CUUR0000SAM,2025-05-01,132.0153,8.431,aggregate
+Medical care,CUUR0000SAM,2025-06-01,132.389,8.431,aggregate
+Medical care,CUUR0000SAM,2025-07-01,132.7637,8.431,aggregate
+Medical care,CUUR0000SAM,2025-08-01,133.1395,8.431,aggregate
+Medical care,CUUR0000SAM,2025-09-01,133.5163,8.431,aggregate
+Medical care,CUUR0000SAM,2025-10-01,133.8943,8.431,aggregate
+Medical care,CUUR0000SAM,2025-11-01,134.2732,8.431,aggregate
+Medical care,CUUR0000SAM,2025-12-01,134.6533,8.431,aggregate
+Medical care,CUUR0000SAM,2026-01-01,135.0344,8.431,aggregate
+Medical care,CUUR0000SAM,2026-02-01,135.4167,8.431,aggregate
+Medical care,CUUR0000SAM,2026-03-01,135.2,8.431,aggregate
+Medical care services,CUUR0000SAM2,2025-02-01,140.4001,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-03-01,140.8145,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-04-01,141.2302,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-05-01,141.647,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-06-01,142.0651,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-07-01,142.4844,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-08-01,142.905,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-09-01,143.3268,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-10-01,143.7498,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-11-01,144.1741,6.956,breadth
+Medical care services,CUUR0000SAM2,2025-12-01,144.5997,6.956,breadth
+Medical care services,CUUR0000SAM2,2026-01-01,145.0265,6.956,breadth
+Medical care services,CUUR0000SAM2,2026-02-01,145.4545,6.956,breadth
+Medical care services,CUUR0000SAM2,2026-03-01,145.6,6.956,breadth
+Medical care commodities,CUUR0000SAM1,2025-02-01,96.7139,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-03-01,96.8021,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-04-01,96.8904,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-05-01,96.9788,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-06-01,97.0672,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-07-01,97.1558,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-08-01,97.2444,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-09-01,97.3331,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-10-01,97.4219,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-11-01,97.5107,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2025-12-01,97.5997,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2026-01-01,97.6887,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2026-02-01,97.7778,1.475,breadth
+Medical care commodities,CUUR0000SAM1,2026-03-01,96.8,1.475,breadth
+Physicians' services,CUUR0000SEMC01,2025-02-01,129.2617,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-03-01,129.4857,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-04-01,129.7102,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-05-01,129.935,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-06-01,130.1602,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-07-01,130.3859,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-08-01,130.6119,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-09-01,130.8383,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-10-01,131.0651,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-11-01,131.2922,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2025-12-01,131.5198,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2026-01-01,131.7478,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2026-02-01,131.9762,1.68,breadth
+Physicians' services,CUUR0000SEMC01,2026-03-01,132.9,1.68,breadth
+Hospital services,CUUR0000SEMD01,2025-02-01,163.8122,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-03-01,164.6225,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-04-01,165.4368,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-05-01,166.2552,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-06-01,167.0776,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-07-01,167.904,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-08-01,168.7346,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-09-01,169.5692,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-10-01,170.408,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-11-01,171.2509,2.183,breadth
+Hospital services,CUUR0000SEMD01,2025-12-01,172.098,2.183,breadth
+Hospital services,CUUR0000SEMD01,2026-01-01,172.9493,2.183,breadth
+Hospital services,CUUR0000SEMD01,2026-02-01,173.8048,2.183,breadth
+Hospital services,CUUR0000SEMD01,2026-03-01,174.5,2.183,breadth
+Prescription drugs,CUUR0000SEMF01,2025-02-01,107.3039,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-03-01,107.3128,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-04-01,107.3217,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-05-01,107.3307,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-06-01,107.3396,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-07-01,107.3486,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-08-01,107.3575,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-09-01,107.3664,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-10-01,107.3754,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-11-01,107.3843,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2025-12-01,107.3933,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2026-01-01,107.4022,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2026-02-01,107.4112,0.963,breadth
+Prescription drugs,CUUR0000SEMF01,2026-03-01,105.8,0.963,breadth
+Health insurance,CUUR0000SEME,2025-02-01,141.7829,0.864,breadth
+Health insurance,CUUR0000SEME,2025-03-01,141.6642,0.864,breadth
+Health insurance,CUUR0000SEME,2025-04-01,141.5456,0.864,breadth
+Health insurance,CUUR0000SEME,2025-05-01,141.4271,0.864,breadth
+Health insurance,CUUR0000SEME,2025-06-01,141.3087,0.864,breadth
+Health insurance,CUUR0000SEME,2025-07-01,141.1904,0.864,breadth
+Health insurance,CUUR0000SEME,2025-08-01,141.0722,0.864,breadth
+Health insurance,CUUR0000SEME,2025-09-01,140.9541,0.864,breadth
+Health insurance,CUUR0000SEME,2025-10-01,140.8361,0.864,breadth
+Health insurance,CUUR0000SEME,2025-11-01,140.7182,0.864,breadth
+Health insurance,CUUR0000SEME,2025-12-01,140.6004,0.864,breadth
+Health insurance,CUUR0000SEME,2026-01-01,140.4827,0.864,breadth
+Health insurance,CUUR0000SEME,2026-02-01,140.3651,0.864,breadth
+Health insurance,CUUR0000SEME,2026-03-01,138.4,0.864,breadth

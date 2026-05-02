@@ -1,0 +1,25 @@
+DTCC CPI TERM CALIBRATION SUMMARY
+
+Source file: dtcc_cpi_swaps_parity_ready_exec_window_dec2025_feb2026.csv
+Rows analyzed: 1,083
+Execution window: 2025-12-10 20:59:15+00:00 to 2026-02-27 20:55:58+00:00
+Execution months: 2025-12, 2026-01, 2026-02
+
+Tenor distribution:
+- 1Y: 68 trades | median 2.4950% | notional-weighted avg 2.5862% | total notional $261,590,000
+- 2Y: 45 trades | median 2.4492% | notional-weighted avg 2.5419% | total notional $136,390,000
+- 3Y: 38 trades | median 2.7444% | notional-weighted avg 2.6837% | total notional $91,020,000
+- 43M: 2 trades | median 2.4100% | notional-weighted avg 2.4100% | total notional $6,000,000
+- 4Y: 7 trades | median 2.3964% | notional-weighted avg 2.3588% | total notional $11,030,000
+- 5Y: 333 trades | median 2.5000% | notional-weighted avg 2.4837% | total notional $644,543,900
+- 7Y: 1 trades | median 2.3727% | notional-weighted avg 2.3727% | total notional $450,000
+- 10Y: 329 trades | median 2.4770% | notional-weighted avg 2.4654% | total notional $767,749,000
+- 15Y: 2 trades | median 2.4924% | notional-weighted avg 2.4784% | total notional $7,000,000
+- 20Y: 13 trades | median 2.4267% | notional-weighted avg 2.4636% | total notional $16,850,000
+- 27Y: 2 trades | median 2.4409% | notional-weighted avg 2.4409% | total notional $10,000,000
+- 30Y: 243 trades | median 2.4450% | notional-weighted avg 2.4462% | total notional $725,852,000
+
+Notes:
+- This is calibration-ready tenor data, not monthly target_month parity data.
+- cpi_lag_months_inferred remains convention-based (3 months) unless your paid feed later exposes an explicit lag field.
+- Use the by-tenor summary for institutional validation and the monthly-by-tenor file for time-sliced comparisons.

@@ -1,0 +1,23 @@
+{
+  "parsed_inputs": {
+    "present": [
+      "nhe_hist_1960_2024_parsed.csv",
+      "nhe_summary_1960_2024_parsed.csv",
+      "ma_ffs_2024_parsed.csv",
+      "ma_ffs_2023_parsed.csv",
+      "ma_ffs_2022_parsed.csv",
+      "ma_ffs_2021_parsed.csv",
+      "ma_ffs_2020_parsed.csv"
+    ],
+    "missing": [],
+    "optional_present": [
+      "partb_nat_sum_2024_parsed.csv"
+    ]
+  },
+  "outputs": {
+    "cms_anchor_timeseries": "cms_anchor_timeseries.csv",
+    "service_line_signal_panel": "service_line_signal_panel.csv",
+    "basis_action_panel": "basis_action_panel.csv",
+    "historical_benchmark_panel": "historical_benchmark_panel.csv"
+  }
+}

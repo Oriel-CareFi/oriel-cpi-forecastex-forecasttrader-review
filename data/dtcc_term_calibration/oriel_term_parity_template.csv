@@ -1,0 +1,7 @@
+curve_family,target_tenor_months,target_tenor_label,oriel_term_rate_pct,oriel_term_rate_decimal,curve_timestamp_utc,curve_version,notes
+US_CPI_TERM,12,1Y,,,,,
+US_CPI_TERM,24,2Y,,,,,
+US_CPI_TERM,36,3Y,,,,,
+US_CPI_TERM,60,5Y,,,,,
+US_CPI_TERM,120,10Y,,,,,
+US_CPI_TERM,360,30Y,,,,,

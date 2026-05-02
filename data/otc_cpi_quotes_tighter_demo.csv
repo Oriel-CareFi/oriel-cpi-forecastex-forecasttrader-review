@@ -1,0 +1,5 @@
+quote_date,target_month,otc_quote_type,otc_yoy_rate,known_base_index,implied_future_index_level,source,quality_flag,notes
+2026-04-02,2026-03,illustrative_static,3.222,319.082,329.363,Illustrative interim OTC reference built for demo alignment,indicative_demo_only,Constructed near ORIEL for demo parity; target basis -4.0 bp
+2026-04-02,2026-04,illustrative_static,3.251,319.799,330.196,Illustrative interim OTC reference built for demo alignment,indicative_demo_only,Constructed near ORIEL for demo parity; target basis +3.0 bp
+2026-04-02,2026-05,illustrative_static,3.236,320.795,331.176,Illustrative interim OTC reference built for demo alignment,indicative_demo_only,Constructed near ORIEL for demo parity; target basis -6.0 bp
+2026-04-02,2026-06,illustrative_static,3.129,321.465,331.524,Illustrative interim OTC reference built for demo alignment,indicative_demo_only,Constructed near ORIEL for demo parity; target basis +5.0 bp

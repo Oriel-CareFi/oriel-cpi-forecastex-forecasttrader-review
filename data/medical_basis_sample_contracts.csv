@@ -1,0 +1,21 @@
+maturity,observation_window,threshold_bps,yes_price,bid,ask,volume,open_interest,source,source_status,contract_label
+2026-12-31,Calendar year 2026 / official year-end print,0,0.78,0.76,0.80,1250,7200,ForecastEx-style sample,SAMPLE,Spread > 0 bps
+2026-12-31,Calendar year 2026 / official year-end print,100,0.56,0.54,0.58,1035,6400,ForecastEx-style sample,SAMPLE,Spread > 100 bps
+2026-12-31,Calendar year 2026 / official year-end print,200,0.34,0.32,0.36,890,5100,ForecastEx-style sample,SAMPLE,Spread > 200 bps
+2026-12-31,Calendar year 2026 / official year-end print,300,0.16,0.15,0.18,640,3600,ForecastEx-style sample,SAMPLE,Spread > 300 bps
+2026-12-31,Calendar year 2026 / official year-end print,400,0.06,0.05,0.08,420,2200,ForecastEx-style sample,SAMPLE,Spread > 400 bps
+2027-12-31,Calendar year 2027 / official year-end print,0,0.82,0.80,0.84,1180,6800,ForecastEx-style sample,SAMPLE,Spread > 0 bps
+2027-12-31,Calendar year 2027 / official year-end print,100,0.63,0.61,0.65,980,5900,ForecastEx-style sample,SAMPLE,Spread > 100 bps
+2027-12-31,Calendar year 2027 / official year-end print,200,0.42,0.40,0.44,760,4400,ForecastEx-style sample,SAMPLE,Spread > 200 bps
+2027-12-31,Calendar year 2027 / official year-end print,300,0.23,0.21,0.25,590,3100,ForecastEx-style sample,SAMPLE,Spread > 300 bps
+2027-12-31,Calendar year 2027 / official year-end print,400,0.10,0.09,0.12,370,1900,ForecastEx-style sample,SAMPLE,Spread > 400 bps
+2028-12-31,Calendar year 2028 / official year-end print,0,0.84,0.82,0.86,930,5600,ForecastEx-style sample,SAMPLE,Spread > 0 bps
+2028-12-31,Calendar year 2028 / official year-end print,100,0.67,0.65,0.69,770,4900,ForecastEx-style sample,SAMPLE,Spread > 100 bps
+2028-12-31,Calendar year 2028 / official year-end print,200,0.48,0.46,0.50,640,3900,ForecastEx-style sample,SAMPLE,Spread > 200 bps
+2028-12-31,Calendar year 2028 / official year-end print,300,0.29,0.27,0.31,500,2700,ForecastEx-style sample,SAMPLE,Spread > 300 bps
+2028-12-31,Calendar year 2028 / official year-end print,400,0.14,0.12,0.16,320,1600,ForecastEx-style sample,SAMPLE,Spread > 400 bps
+2029-12-31,Calendar year 2029 / official year-end print,0,0.86,0.84,0.88,780,4400,ForecastEx-style sample,SAMPLE,Spread > 0 bps
+2029-12-31,Calendar year 2029 / official year-end print,100,0.70,0.68,0.72,650,3800,ForecastEx-style sample,SAMPLE,Spread > 100 bps
+2029-12-31,Calendar year 2029 / official year-end print,200,0.53,0.51,0.55,540,3100,ForecastEx-style sample,SAMPLE,Spread > 200 bps
+2029-12-31,Calendar year 2029 / official year-end print,300,0.34,0.32,0.36,410,2100,ForecastEx-style sample,SAMPLE,Spread > 300 bps
+2029-12-31,Calendar year 2029 / official year-end print,400,0.18,0.16,0.20,280,1300,ForecastEx-style sample,SAMPLE,Spread > 400 bps

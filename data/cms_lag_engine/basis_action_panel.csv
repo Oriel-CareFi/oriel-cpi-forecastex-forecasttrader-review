@@ -1,0 +1,2 @@
+year,medical_cpi_proxy,oriel_healthcare_spot,cms_official_anchor_yoy,public_print_basis_bps,anchor_basis_bps,historical_percentile,expected_convergence_window,signal_confidence,trading_lens,hedge_lens
+2024,7.726,7.87,8.046,14.4,-17.6,40.0,2-4 releases,Medium,Long healthcare inflation basis,Moderate effectiveness; monitor service-mix residual risk

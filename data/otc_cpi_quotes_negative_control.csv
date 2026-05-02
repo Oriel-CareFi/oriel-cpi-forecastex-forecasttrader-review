@@ -1,0 +1,8 @@
+target_month,otc_yoy_rate,implied_index_level,source,quality_flag,notes
+2026-03-01,2.55,327.219,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-04-01,2.58,328.05,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-05-01,2.6,329.136,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-06-01,2.61,329.855,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-07-01,2.63,331.044,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-08-01,2.64,331.576,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.
+2026-09-01,2.66,332.594,Indicative static placeholder,manual_static,Temporary OTC-comparable placeholder for module wiring; replace with dealer/vendor marks when available.

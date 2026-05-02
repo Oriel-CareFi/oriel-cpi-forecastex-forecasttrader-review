@@ -1,0 +1,140 @@
+{
+  "dataset_name": "dtcc_cpi_term_tenor_parity_input",
+  "purpose": "Apples-to-apples tenor-rate parity between DTCC OTC CPI swaps and Oriel-derived term rates.",
+  "notes": [
+    "This schema is for term-rate parity, not monthly target_month parity.",
+    "Do not synthesize target_month from tenor swaps.",
+    "Join Oriel and DTCC on target_tenor_months or target_tenor_label.",
+    "Compare DTCC observed_rate_pct vs Oriel implied term rate for the same tenor bucket."
+  ],
+  "trade_level_columns": [
+    {
+      "name": "source_system",
+      "type": "string",
+      "description": "Source dataset identifier."
+    },
+    {
+      "name": "validation_mode",
+      "type": "string",
+      "description": "Expected to be TERM_RATE_PARITY."
+    },
+    {
+      "name": "curve_family",
+      "type": "string",
+      "description": "Curve family label, e.g. US_CPI_TERM."
+    },
+    {
+      "name": "index_family",
+      "type": "string",
+      "description": "Normalized CPI index family."
+    },
+    {
+      "name": "underlier_name",
+      "type": "string",
+      "description": "Normalized underlier name."
+    },
+    {
+      "name": "target_tenor_months",
+      "type": "integer",
+      "description": "Rounded tenor in months for parity join key."
+    },
+    {
+      "name": "target_tenor_label",
+      "type": "string",
+      "description": "Display tenor label, e.g. 1Y, 5Y, 30Y."
+    },
+    {
+      "name": "target_tenor_years_exact",
+      "type": "number",
+      "description": "Exact tenor in years from effective to expiration."
+    },
+    {
+      "name": "execution_timestamp_utc",
+      "type": "datetime",
+      "description": "Trade execution timestamp in UTC."
+    },
+    {
+      "name": "execution_month",
+      "type": "string",
+      "description": "YYYY-MM derived from execution timestamp."
+    },
+    {
+      "name": "effective_date",
+      "type": "date",
+      "description": "Swap effective date."
+    },
+    {
+      "name": "expiration_date",
+      "type": "date",
+      "description": "Swap expiration date."
+    },
+    {
+      "name": "observed_rate_pct",
+      "type": "number",
+      "description": "Observed fixed rate in percent."
+    },
+    {
+      "name": "observed_rate_decimal",
+      "type": "number",
+      "description": "Observed fixed rate in decimal form."
+    },
+    {
+      "name": "notional_usd",
+      "type": "number",
+      "description": "Trade notional in USD."
+    },
+    {
+      "name": "swap_format",
+      "type": "string",
+      "description": "Inferred swap format, e.g. ZCIS or YYIS."
+    },
+    {
+      "name": "cpi_lag_months",
+      "type": "integer",
+      "description": "Inferred CPI lag months, convention-based."
+    },
+    {
+      "name": "index_convention",
+      "type": "string",
+      "description": "Human-readable inferred index convention."
+    },
+    {
+      "name": "platform_identifier",
+      "type": "string",
+      "description": "Execution platform identifier from DTCC."
+    },
+    {
+      "name": "cleared_flag",
+      "type": "string",
+      "description": "Clearing indicator from DTCC."
+    },
+    {
+      "name": "dtcc_dissemination_identifier",
+      "type": "string",
+      "description": "DTCC dissemination identifier."
+    },
+    {
+      "name": "source_file",
+      "type": "string",
+      "description": "Original uploaded DTCC source file."
+    }
+  ],
+  "join_recommendation": {
+    "primary_join_keys": [
+      "target_tenor_months"
+    ],
+    "secondary_join_keys": [
+      "target_tenor_label"
+    ],
+    "recommended_metric_pairs": [
+      [
+        "observed_rate_pct",
+        "oriel_term_rate_pct"
+      ],
+      [
+        "observed_rate_decimal",
+        "oriel_term_rate_decimal"
+      ]
+    ]
+  }
+}

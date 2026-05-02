@@ -1,0 +1,13 @@
+target_month,days_from_valuation,constituent_id,contract_family,weight,eligible,expected_yoy_pct,index_level,std_dev_pct
+2026-04-01,0,FORECASTEX_binary_threshold_202604,binary_threshold,0.65,True,0.89,99.97,0.17
+2026-04-01,0,FORECASTEX_exact_outcome_202604,exact_outcome,0.35,True,0.9,99.985,0.18
+2026-05-01,30,FORECASTEX_binary_threshold_202605,binary_threshold,0.65,True,0.69,99.79,0.22
+2026-05-01,30,FORECASTEX_exact_outcome_202605,exact_outcome,0.35,True,0.7,99.805,0.23
+2026-06-01,61,FORECASTEX_binary_threshold_202606,binary_threshold,0.65,True,0.58,99.66,0.25
+2026-06-01,61,FORECASTEX_exact_outcome_202606,exact_outcome,0.35,True,0.58,99.66,0.26
+2026-07-01,91,FORECASTEX_binary_threshold_202607,binary_threshold,0.65,True,0.44,99.46,0.29
+2026-07-01,91,FORECASTEX_exact_outcome_202607,exact_outcome,0.35,True,0.44,99.46,0.3
+2026-08-01,122,FORECASTEX_binary_threshold_202608,binary_threshold,0.65,True,0.31,99.2,0.32
+2026-08-01,122,FORECASTEX_exact_outcome_202608,exact_outcome,0.35,True,0.305,99.19,0.33
+2026-09-01,153,FORECASTEX_binary_threshold_202609,binary_threshold,0.65,True,0.33,99.26,0.35
+2026-09-01,153,FORECASTEX_exact_outcome_202609,exact_outcome,0.35,True,0.325,99.25,0.36

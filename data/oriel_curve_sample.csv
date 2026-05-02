@@ -1,0 +1,5 @@
+target_month,denominator_cpi,oriel_implied_index,oriel_rate_pct,oriel_rate_decimal,curve_source
+2026-03-01,319.082,329.492,3.262,0.03262,reconstructed_from_prior_static_test
+2026-04-01,319.799,330.101,3.221,0.03221,reconstructed_from_prior_static_test
+2026-05-01,320.795,331.368,3.296,0.032959999999999996,reconstructed_from_prior_static_test
+2026-06-01,321.465,331.365,3.079,0.03079,reconstructed_from_prior_static_test

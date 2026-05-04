@@ -186,9 +186,13 @@ else:
     from tabs import (
         render_index, render_forecastex_tab, render_polymarket_tab,
         render_perp_readiness_tab, render_cms_lag_engine_tab,
-        render_medical_basis_tab, render_parity_tab, render_overview_tab,
+        render_medical_basis_tab, render_parity_tab, render_review_overview_tab,
     )
 
+    # The CareFi Healthcare Trend Index tab (`hc`) is intentionally excluded
+    # from the review-build sequence per
+    # docs/handoffs/CPI_REVIEW_EXTERNAL_OVERVIEW_PATCH.md, but the renderer
+    # is kept so production (REVIEW_BUILD = False) can still expose it.
     def _render_hc() -> None:
         render_index(
             HEALTHCARE_METHODOLOGY, HEALTHCARE_SNAPSHOTS, HEALTHCARE_CONTRACTS_TABLE,
@@ -238,7 +242,7 @@ else:
             st.warning("Parity modules not found. Place parity_*.py files in the parity directory.")
 
     TAB_RENDERERS: dict[str, callable] = {
-        "overview":  render_overview_tab,
+        "overview":  render_review_overview_tab,
         "hc":        _render_hc,
         "cpi":       _render_cpi,
         "fx":        _render_fx,

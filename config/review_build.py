@@ -2,14 +2,21 @@
 config/review_build.py — ForecastTrader review-build flag.
 
 Toggling REVIEW_BUILD = True causes app.py to:
-  * Render the Overview tab as the first tab.
-  * Reorder + relabel the visible tabs to match the ForecastTrader
-    talk-track narrative.
-  * Hide the Kalshi-style CPI tab, Polymarket-style CPI tab, and the
-    Index Administrator view (operational tooling, not for external
-    reviewers).
+  * Render the App Overview tab (external-facing, see
+    tabs/review_overview_tab.py) as the first tab.
+  * Reorder + relabel the visible tabs to match the external review
+    layout requested by Chris in the CPI_REVIEW_EXTERNAL_OVERVIEW_PATCH
+    handoff.
   * Block the ?view=index_admin query route.
   * Render a disclaimer footer at the bottom of every page.
+  * Replace the Index Administrator nav link with the review-build
+    label.
+
+Per the v28-ft-review.5 update: Kalshi-style and Polymarket-style CPI
+tabs are now visible (Chris listed them in the acceptance criteria as
+distinct CPI Forward Index methodologies, not competing venues). The
+CareFi Healthcare Trend Index (`hc`) tab is dropped from the external
+sequence to keep the app focused on the CPI-to-healthcare workflow.
 
 Flip REVIEW_BUILD = False on the production branch (`main`) to restore
 the full eight-tab production experience and re-enable Index Admin.
@@ -38,39 +45,44 @@ REVIEW_FOOTER: str = (
 # ─────────────────────────────────────────────────────────────────────────────
 # Tab visibility / ordering.
 #
-# Tab keys (must match the keys in app.py's _TAB_META):
-#   overview  — new framing tab (review build only)
-#   hc        — CareFi Healthcare Trend Index (a.k.a. Medical CPI Tracker)
-#   cpi       — Oriel CPI Forward Index (Kalshi-style)              [hidden]
+# Tab keys (must match the keys in app.py's TAB_RENDERERS):
+#   overview  — App Overview (external-facing review_overview_tab)
+#   cpi       — Oriel CPI Forward Index (Kalshi-style)
 #   fx        — Oriel CPI Forward Index (ForecastEx-style)
-#   poly      — Oriel CPI Forward Index (Polymarket-style)          [hidden]
-#   perp      — Oriel CPI Basis · Cross-Venue Diagnostics
-#   cms       — Oriel Healthcare Reference (CMS, backup)
-#   med_basis — ForecastEx Medical Inflation Basis Contract
-#   parity    — OTC Parity Validation (backup)
+#   poly      — Oriel CPI Forward Index (Polymarket-style)
+#   perp      — Oriel CPI Basis
+#   cms       — Medical CPI Tracker (renders render_cms_lag_engine_tab)
+#   med_basis — ForecastEx Medical Basis
+#   parity    — OTC Parity Validation
+#
+# `hc` (CareFi Healthcare Trend Index) is intentionally excluded from
+# the review-build sequence per CPI_REVIEW_EXTERNAL_OVERVIEW_PATCH.
 # ─────────────────────────────────────────────────────────────────────────────
-REVIEW_HIDDEN_TABS: tuple[str, ...] = ("cpi", "poly")
+REVIEW_HIDDEN_TABS: tuple[str, ...] = ()
 
 # Order in which the visible tabs are rendered in the review build.
-# Sequence matches the talk track's recommended demo order.
+# Matches the acceptance criteria in
+# docs/handoffs/CPI_REVIEW_EXTERNAL_OVERVIEW_PATCH.md.
 REVIEW_TAB_ORDER: tuple[str, ...] = (
     "overview",
+    "cpi",
     "fx",
+    "poly",
     "perp",
-    "hc",
-    "med_basis",
     "cms",
+    "med_basis",
     "parity",
 )
 
-# Tab labels overridden for the review build (talk-track wording).
+# Tab labels overridden for the review build.
 # Any key not present here falls back to its production label.
 REVIEW_TAB_LABELS: dict[str, str] = {
-    "overview":  "Overview",
-    "fx":        "ForecastEx CPI Forward Index",
-    "perp":      "CPI Basis · Cross-Venue Diagnostics",
-    "hc":        "Medical CPI Tracker · Healthcare Reference",
-    "med_basis": "ForecastEx Medical Inflation Basis Contract",
-    "cms":       "CMS Reference (backup)",
-    "parity":    "OTC Parity Validation (backup)",
+    "overview":  "App Overview",
+    "cpi":       "Oriel CPI Forward Index (Kalshi-style)",
+    "fx":        "Oriel CPI Forward Index (ForecastEx-style)",
+    "poly":      "Oriel CPI Forward Index (Polymarket-style)",
+    "perp":      "Oriel CPI Basis",
+    "cms":       "Medical CPI Tracker",
+    "med_basis": "ForecastEx Medical Basis",
+    "parity":    "OTC Parity Validation",
 }
